@@ -1,4 +1,33 @@
 /* eslint-disable max-len */
+import customProperties from "postcss-custom-properties"
+import applyRule from "postcss-apply"
+import calc from "postcss-calc"
+import imageSet from "postcss-image-set-polyfill"
+import nesting from "postcss-nesting"
+import customMedia from "postcss-custom-media"
+import mediaQueriesRange from "postcss-media-minmax"
+import customSelectors from "postcss-custom-selectors"
+import attributeCaseInsensitive from "postcss-attribute-case-insensitive"
+import colorRebeccapurple from "postcss-color-rebeccapurple"
+import colorHwb from "postcss-color-hwb"
+import colorHsl from "postcss-color-hsl"
+import colorRgb from "postcss-color-rgb"
+import colorGray from "postcss-color-gray"
+import colorHexAlpha from "postcss-color-hex-alpha"
+import colorFunction from "postcss-color-function"
+import fontFamilySystemUi from "postcss-font-family-system-ui"
+import fontVariant from "postcss-font-variant"
+import filter from "pleeease-filters"
+import initial from "postcss-initial"
+import rem from "pixrem"
+import pseudoElements from "postcss-pseudoelements"
+import pseudoClassMatches from "postcss-selector-matches"
+import pseudoClassNot from "postcss-selector-not"
+import pseudoClassAnyLink from "postcss-pseudo-class-any-link"
+import colorRgba from "postcss-color-rgba-fallback"
+import overflowWrap from "postcss-replace-overflow-wrap"
+import autoprefixer from "autoprefixer"
+
 export default {
   /**
    * REMINDER:
@@ -7,86 +36,86 @@ export default {
    * ******************
    */
    // https://npmjs.com/package/postcss-custom-properties
-  customProperties: (options) => require("postcss-custom-properties")(options),
+  customProperties,
 
   // https://npmjs.com/package/postcss-apply
-  applyRule: (options) => require("postcss-apply")(options),
+  applyRule,
 
   // https://npmjs.com/package/postcss-calc
-  calc: (options) => require("postcss-calc")(options),
+  calc,
 
   // https://www.npmjs.com/package/postcss-image-set-polyfill
-  imageSet: (options) => require("postcss-image-set-polyfill")(options),
+  imageSet,
 
   // https://npmjs.com/package/postcss-nesting
-  nesting: (options) => require("postcss-nesting")(options),
+  nesting,
 
   // https://npmjs.com/package/postcss-custom-media
-  customMedia: (options) => require("postcss-custom-media")(options),
+  customMedia,
 
   // https://npmjs.com/package/postcss-media-minmax
-  mediaQueriesRange: (options) => require("postcss-media-minmax")(options),
+  mediaQueriesRange,
 
   // https://npmjs.com/package/postcss-custom-selectors
-  customSelectors: (options) => require("postcss-custom-selectors")(options),
+  customSelectors,
 
   // https://npmjs.com/package/postcss-attribute-case-insensitive
-  attributeCaseInsensitive: (options) => require("postcss-attribute-case-insensitive")(options),
+  attributeCaseInsensitive,
 
   // https://npmjs.com/package/postcss-color-rebeccapurple
-  colorRebeccapurple: (options) => require("postcss-color-rebeccapurple")(options),
+  colorRebeccapurple,
 
   // https://npmjs.com/package/postcss-color-hwb
-  colorHwb: (options) => require("postcss-color-hwb")(options),
+  colorHwb,
 
   // https://npmjs.com/package/postcss-color-hsl
-  colorHsl: (options) => require("postcss-color-hsl")(options),
+  colorHsl,
 
   // https://npmjs.com/package/postcss-color-rgb
-  colorRgb: (options) => require("postcss-color-rgb")(options),
+  colorRgb,
 
   // https://npmjs.com/package/postcss-color-gray
-  colorGray: (options) => require("postcss-color-gray")(options),
+  colorGray,
 
   // https://npmjs.com/package/postcss-color-hex-alpha
-  colorHexAlpha: (options) => require("postcss-color-hex-alpha")(options),
+  colorHexAlpha,
 
   // https://npmjs.com/package/postcss-color-function
-  colorFunction: (options) => require("postcss-color-function")(options),
+  colorFunction,
 
   // https://npmjs.com/package/postcss-font-family-system-ui
-  fontFamilySystemUi: (options) => require("postcss-font-family-system-ui")(options),
+  fontFamilySystemUi,
 
   // https://npmjs.com/package/postcss-font-variant
-  fontVariant: (options) => require("postcss-font-variant")(options),
+  fontVariant,
 
   // https://npmjs.com/package/pleeease-filters
-  filter: (options) => require("pleeease-filters")(options),
+  filter,
 
   // https://npmjs.com/package/postcss-initial
-  initial: (options) => require("postcss-initial")(options),
+  initial,
 
   // https://npmjs.com/package/pixrem
-  rem: (options) => require("pixrem")(options),
+  rem,
 
   // https://npmjs.com/package/postcss-pseudoelements
-  pseudoElements: (options) => require("postcss-pseudoelements")(options),
+  pseudoElements,
 
   // https://npmjs.com/package/postcss-selector-matches
-  pseudoClassMatches: (options) => require("postcss-selector-matches")(options),
+  pseudoClassMatches,
 
   // https://npmjs.com/package/postcss-selector-not
-  pseudoClassNot: (options) => require("postcss-selector-not")(options),
+  pseudoClassNot,
 
   // https://npmjs.com/package/postcss-pseudo-class-any-link
-  pseudoClassAnyLink: (options) => require("postcss-pseudo-class-any-link")(options),
+  pseudoClassAnyLink,
 
   // https://npmjs.com/package/postcss-color-rgba-fallback
-  colorRgba: (options) => require("postcss-color-rgba-fallback")(options),
+  colorRgba,
 
   // https://www.npmjs.com/package/postcss-replace-overflow-wrap
-  overflowWrap: (options) => require("postcss-replace-overflow-wrap")(options),
+  overflowWrap,
 
   // https://npmjs.com/package/autoprefixer
-  autoprefixer: (options) => require("autoprefixer")(options),
+  autoprefixer,
 }
